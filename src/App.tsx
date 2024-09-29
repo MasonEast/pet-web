@@ -1,11 +1,12 @@
 import React from "react";
-import { Breadcrumb, Layout, Menu, theme, Input } from "antd";
+import { Layout, Menu, theme, Input, Card } from "antd";
 
 import "./assets/global.less"; // 引入全局 less 样式
 import "./App.less";
 
 const { Header, Content, Footer } = Layout;
 const { Search } = Input;
+const { Meta } = Card;
 
 const items = [
   {
@@ -55,20 +56,22 @@ const App: React.FC = () => {
         </Menu>
       </Header>
       <Content style={{ padding: "0 48px", height: "3000px" }}>
-        <Breadcrumb style={{ margin: "16px 0" }}>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
         <div
+          className="content"
           style={{
             background: colorBgContainer,
-            minHeight: 280,
+            minHeight: 600,
             padding: 24,
             borderRadius: borderRadiusLG,
           }}
         >
-          Content
+          <Card
+            hoverable
+            // style={{ width: 240 }}
+            cover={<img alt="example" src="/banner.jpeg" />}
+          >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+          </Card>
         </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>

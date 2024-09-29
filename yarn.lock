@@ -549,6 +549,11 @@
   resolved "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
+"@types/node@^14.17.1":
+  version "14.18.63"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-14.18.63.tgz#1788fa8da838dbb5f9ea994b834278205db6ca2b"
+  integrity sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==
+
 "@types/node@^22.7.2":
   version "22.7.2"
   resolved "https://registry.npmmirror.com/@types/node/-/node-22.7.2.tgz#80ed66c0a5025ffa037587fd69a816f29b54e4c7"
@@ -575,6 +580,11 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
+
+"@types/tinycolor2@^1.4.2":
+  version "1.4.6"
+  resolved "https://registry.npmmirror.com/@types/tinycolor2/-/tinycolor2-1.4.6.tgz#670cbc0caf4e58dd61d1e3a6f26386e473087f06"
+  integrity sha512-iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==
 
 "@typescript-eslint/eslint-plugin@8.7.0":
   version "8.7.0"
@@ -793,7 +803,7 @@ callsites@^3.0.0:
   resolved "https://registry.npmmirror.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.1:
   version "4.1.2"
   resolved "https://registry.npmmirror.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -805,6 +815,13 @@ classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classna
   version "2.5.1"
   resolved "https://registry.npmmirror.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
+
+clean-css@^5.1.2:
+  version "5.3.3"
+  resolved "https://registry.npmmirror.com/clean-css/-/clean-css-5.3.3.tgz#b330653cd3bd6b75009cc25c714cae7b93351ccd"
+  integrity sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==
+  dependencies:
+    source-map "~0.6.0"
 
 color-convert@^2.0.1:
   version "2.0.1"
@@ -841,6 +858,11 @@ copy-to-clipboard@^3.3.3:
   integrity sha512-2KV8NhB5JqC3ky0r9PMCAZKbUHSwtEo4CwCs0KXgruG43gX5PMqDEBbVU4OUzw2MuAWUfsuFmWvEKG5QRfSnJA==
   dependencies:
     toggle-selection "^1.0.6"
+
+cors-env@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/cors-env/-/cors-env-1.0.2.tgz#c426c001c025e52fc0a80c600f5fc81bd9cfcb42"
+  integrity sha512-o8oyP1GXoYm06yINnG4h6Zp2pC/kFepZyGkBhKTHVmNtO7M6rkg0qoep/sybKLoR5IopYMd5jNjhe6RsDi1XrA==
 
 cross-spawn@^7.0.2:
   version "7.0.3"
@@ -879,6 +901,16 @@ errno@^0.1.1:
   integrity sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==
   dependencies:
     prr "~1.0.1"
+
+esbuild-plugin-alias@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npmmirror.com/esbuild-plugin-alias/-/esbuild-plugin-alias-0.1.2.tgz#1232fbde807c0c8ad44c44ec859819eb492e12a8"
+  integrity sha512-WsX0OJy8IGOsGZV+4oHEU5B6XQUpxOsZN1iSoYf9COTDbY7WXcOwd1oCLYNWUIWCExyGXSghIGq2k7sXBldxwQ==
+
+esbuild@^0.11.23:
+  version "0.11.23"
+  resolved "https://registry.npmmirror.com/esbuild/-/esbuild-0.11.23.tgz#c42534f632e165120671d64db67883634333b4b8"
+  integrity sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==
 
 esbuild@^0.21.3:
   version "0.21.5"
@@ -1968,6 +2000,11 @@ throttle-debounce@^5.0.0, throttle-debounce@^5.0.2:
   resolved "https://registry.npmmirror.com/throttle-debounce/-/throttle-debounce-5.0.2.tgz#ec5549d84e053f043c9fd0f2a6dd892ff84456b1"
   integrity sha512-B71/4oyj61iNH0KeCamLuE2rmKuTO5byTOSVwECM5FA7TiAiAW+UqTKZ9ERueC4qvgSttUhdmq1mXC3kJqGX7A==
 
+tinycolor2@^1.4.2:
+  version "1.6.0"
+  resolved "https://registry.npmmirror.com/tinycolor2/-/tinycolor2-1.6.0.tgz#f98007460169b0263b97072c5ae92484ce02d09e"
+  integrity sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmmirror.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
@@ -2029,6 +2066,20 @@ util@^0.10.3:
   integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
   dependencies:
     inherits "2.0.3"
+
+vite-plugin-theme@^0.8.6:
+  version "0.8.6"
+  resolved "https://registry.npmmirror.com/vite-plugin-theme/-/vite-plugin-theme-0.8.6.tgz#31d373ccd44d9160d22dd8f58ac69b237073eefc"
+  integrity sha512-GyoP9JjGkF106AawBh1kvw2eQZ/CCPeZKN5p5XhQe1ah1LO7A/6aVGY5gYGWk2qHG9nXpM1IvxjdbMsg94bvYg==
+  dependencies:
+    "@types/node" "^14.17.1"
+    "@types/tinycolor2" "^1.4.2"
+    chalk "^4.1.1"
+    clean-css "^5.1.2"
+    debug "^4.3.2"
+    esbuild "^0.11.23"
+    esbuild-plugin-alias "^0.1.2"
+    tinycolor2 "^1.4.2"
 
 vite@^5.4.1:
   version "5.4.8"
