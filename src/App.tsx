@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, theme, Input, Card } from "antd";
+import { Layout, Menu, Input, Card } from "antd";
 
 import "./assets/global.less"; // 引入全局 less 样式
 import "./App.less";
@@ -28,9 +28,9 @@ const items = [
 ];
 
 const App: React.FC = () => {
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
+  // const {
+  //   token: { colorBgContainer },
+  // } = theme.useToken();
 
   const onSearch = (value: string) => console.log(value);
 
@@ -55,25 +55,27 @@ const App: React.FC = () => {
           <Menu.Item key="6">注册</Menu.Item>
         </Menu>
       </Header>
-      <Content style={{ padding: "0 48px", height: "3000px" }}>
-        <div
-          className="content"
-          style={{
-            background: colorBgContainer,
-            minHeight: 600,
-            padding: 24,
-            borderRadius: borderRadiusLG,
-          }}
-        >
-          <Card
-            hoverable
-            // style={{ width: 240 }}
-            cover={<img alt="example" src="/banner.jpeg" />}
-          >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-          </Card>
-        </div>
-      </Content>
+      <div className="content_wrapper">
+        <Content className="content">
+          <div className="left">
+            <Card hoverable cover={<img alt="example" src="/banner.jpeg" />}>
+              <Meta
+                title="Europe Street beat"
+                description="www.instagram.com"
+              />
+            </Card>
+            <Card></Card>
+          </div>
+          <div className="right">
+            <Card hoverable cover={<img alt="example" src="/banner.jpeg" />}>
+              <Meta
+                title="Europe Street beat"
+                description="www.instagram.com"
+              />
+            </Card>
+          </div>
+        </Content>
+      </div>
       <Footer style={{ textAlign: "center" }}>
         Ant Design ©{new Date().getFullYear()} Created by Ant UED
       </Footer>

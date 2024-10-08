@@ -30,9 +30,24 @@
   }
 }
 
-.content {
+.content_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    max-width: 1180px;
+    min-height: 80vh;
+    margin: 20px;
+    .left {
+      width: calc(100% - 350px);
+    }
+    .right {
+      width: 300px;
+    }
+  }
 }
